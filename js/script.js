@@ -8,23 +8,50 @@ window.onload = () => {
             })
     }
 
+    $(window).scroll(function () {
 
-    document.getElementById('homeLink').addEventListener('click', function () {
-        document.querySelector('#home').scrollTop();
-    })
-    document.getElementById('chevronLink').addEventListener('click', function () {
-        document.querySelector('#work').scrollTop();
+        let navOpacity = $(this).scrollTop();
+
+//        if (navOpacity > 190) {
+//            if (!$('body').hasClass('abrido'))
+//                $('#header-main').addClass('arre');
+//        } else {
+//            $('#header-main').removeClass('arre');
+//        }
     });
-    document.getElementById('workLink').addEventListener('click', function () {
-        document.querySelector('#work').scrollTop();
-    })
-    document.getElementById('bioLink').addEventListener('click', function () {
-        document.querySelector('#bio').scrollTop();
-    })
-    document.getElementById('contactLink').addEventListener('click', function () {
-        document.querySelector('#contact').scrollTop();
-    })
 
+    $('#burger').on('click', function (e) {
+
+        e.preventDefault();
+
+        $('#nav-main, body, #burger').toggleClass('open');
+
+        if ($('#header-main').hasClass('close')) {
+            $('#header-main').removeClass('close').addClass('kick');
+        } else if ($('#header-main').hasClass('kick')) {
+            $('#header-main').removeClass('kick');
+            setTimeout(() => {
+                $('#header-main').addClass('close')
+            }, 800);
+        }
+
+    });
+
+    //    document.getElementById('homeLink').addEventListener('click', function () {
+    //        document.querySelector('#home').scrollTop();
+    //    })
+    //    document.getElementById('chevronLink').addEventListener('click', function () {
+    //        document.querySelector('#work').scrollTop();
+    //    });
+    //    document.getElementById('workLink').addEventListener('click', function () {
+    //        document.querySelector('#work').scrollTop();
+    //    })
+    //    document.getElementById('bioLink').addEventListener('click', function () {
+    //        document.querySelector('#bio').scrollTop();
+    //    })
+    //    document.getElementById('contactLink').addEventListener('click', function () {
+    //        document.querySelector('#contact').scrollTop();
+    //    })
 
     //    function scrollTo(element, to, duration) {
     //        var start = element.scrollTop,
@@ -52,3 +79,5 @@ window.onload = () => {
 
 
 }
+
+//By @nodws

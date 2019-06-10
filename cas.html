@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Saira|Heebo:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,700,800,900|Saira:400,700,900&display=swap" rel="stylesheet">
 
+    <script src="modernizr-yerby-custom.js"></script>
     <script async defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script async defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -25,54 +26,71 @@
     <script src="js/stars.js"></script>
 </head>
 
-<body id="bootstrapOverride" data-spy="scroll" data-target=".navbar" data-offset="60">
-    <div class="container-fluid p-0">
-        <header class="siteHeader sticky-top">
-            <nav class="navbar navbar-expand-md navbar-dark justify-content-center">
-                <a href="#" class="navbar-brand mr-0"><img class="mainLogo" src="BYDesign_Logo.svg" alt="Logo" /></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto text-center">
-                        <a id="homeLink" class="nav-item nav-link" data-easing="ease-in-out" href="index.html#home">Intro</a>
-                        <a id="workLink" class="nav-item nav-link" data-easing="ease-in-out" href="index.html#work">Work</a>
-                        <a id="bioLink" class="nav-item nav-link" data-easing="ease-in-out" href="index.html#bio">Bio</a>
-                        <a id="contactLink" class="nav-item nav-link" data-easing="ease-in-out" href="index.html#contact">Contact</a>
+<body class="page">
+    <header id="header-main">
+        <div class="brand-bar">
+            <a href="index.html" id="brand"><img class="mainLogo" src="BYDesign_Logo.svg" alt="Logo" /><span>BEN YERBY</span></a>
+            <a href="#" id="burger"> <span></span> <span></span> <span></span> </a>
+        </div>
+        <nav id="nav-main">
+            <ul>
+                <li><a class="link" href="index.html">HOME.</a></li>
+                <li><a class="link" href="work.html">WORK.</a></li>
+                <li><a class="link" href="about.html">BIO.</a></li>
+                <li><a class="link" href="contact.html">CONTACT.</a></li>
+            </ul>
+            <div id="nav-foot">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-item-title">PHONE</div> (919) 896-3708
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-title">EMAIL</div> benyerby1@gmail.com
                     </div>
                 </div>
-                <div class="siteHeader-right">
-                    <a href="https://www.linkedin.com/in/benyerby" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://codepen.io/btide/" target="_blank">
-                        <i class="fab fa-codepen"></i>
-                    </a>
+                <div class="nav-social">
+                    <a href="https://dribbble.com/by_design"><i class="fab fa-dribbble"></i></a>
+                    <a href="https://github.com/byerby"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-codepen"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid page-content p-0">
         <div class="projectHead projectHead-cas container-fluid p-0 fill-viewport">
             <div class="projectPlate">
-                <div class="nameLine text-center">UNC-Wilmington<br />College of Arts and Sciences</div>
+                <div class="nameLine text-center">UNC-Wilmington</div>
                 <div class="titleLine text-center">Designer</div>
             </div>
             <div class="workOverlay"></div>
         </div>
-        <div class="projectDescription">
-            <p>
-                The final project for Intro to Graphic Design was sponsored by the Dean of the College of Arts and Sciences. Per the Dean's request, students were to create a design to be printed on a T-Shirt that represents the College of Arts and Sciences. There were around 35 submissions to be judged by two faculty members in the Art department and the Office of the Dean. Out of all of the submissions, I was chosen for having created the winning design.
-            </p>
-            <p>
-                The thought process behind the T-Shirt design started with a list of words and icons that are representative of the College of Arts and Sciences. After being drawn towards terms relating to critical thinking and the mind, I began brainstorming ways to visually express the mind. A light bulb came to me as the best way to symbolize the mind and critical thinking. Then I began choosing icons to represent each of the 25 departments within the College of Arts and Sciences. Eventually I was able to use the icons and place them accordingly to form the shape of a light bulb.
-            </p>
-            <p>
-                I chose to pursue this design solution, because from the perspective of the College of Arts and Sciences, all of us students, regardless of the major, have developed the mind of a critical thinker. So, from afar we seem to look as if we are one entity, but it is only when one takes a closer look that they realize we are very diverse in our skills and knowledge.
-            </p>
-        </div>
-        <div class="copyright">
-            <div class="copyright col-12 text-center text-uppercase mb-5">
-                Copyright © 2019 | Benjamin L. Yerby
+        <div class="projectDetails">
+            <div class="projectDescription">
+                <div class="overviewTag">Overview</div>
+                <p>
+                    The final project for Intro to Graphic Design was commissioned by the Dean of the College of Arts and Sciences. Per the Dean's request, students were to create a design to be printed on a T-Shirt that represents the College of Arts and Sciences. There were around 35 submissions to be judged by two faculty members in the Art department and the Office of the Dean. Out of all of the submissions, I was chosen for having created the winning design.
+                </p>
+                <p>
+                    The thought process behind the T-Shirt design started with a list of words and icons that are representative of the College of Arts and Sciences. After being drawn towards terms relating to critical thinking and the mind, I began brainstorming ways to visually express the mind. A light bulb came to me as the best way to symbolize the mind and critical thinking. Then I began choosing icons to represent each of the 25 departments within the College of Arts and Sciences. Eventually I was able to use the icons and place them accordingly to form the shape of a light bulb.
+                </p>
+                <p>
+                    I chose to pursue this design solution, because from the perspective of the College of Arts and Sciences, all of us students, regardless of the major, have developed the mind of a critical thinker. So, from afar we seem to look as if we are one entity, but it is only when one takes a closer look that they realize we are very diverse in our skills and knowledge.
+                </p>
+            </div>
+            <div class="projectTools">
+                <div class="sectionTag-detail">Creative Tools</div>
+                <span>Adobe Illustrator</span>
+            </div>
+            <div class="projectProcess">
+                <div class="overviewTag subTag">Process</div>
+            </div>
+             <div class="projectDeliverables">
+                <div class="overviewTag subTag">Deliverables</div>
             </div>
         </div>
     </div>
+    <footer class="copyright">
+        Copyright © 2019 | Benjamin Yerby
+    </footer>
 </body></html>
