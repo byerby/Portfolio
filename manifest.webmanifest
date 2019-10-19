@@ -1,12 +1,12 @@
 {
     "manifest_verion": 2,
-    "version": 2.1,
+    "version": 2.2,
     "name": "Benjamin Yerby",
-    "short_name": "BY Design",
+    "short_name": "Yerby Creative",
     "start_url": "index.html",
     "display": "fullscreen",
     "background_color": "#000000",
-    "description": "Designer + Developer Portfolio",
+    "description": "Ben Yerby is an Interactive Designer and Developer currently based in Raleigh, NC",
     "dir": "ltr",
     "lang": "en-us",
     "icons": [
